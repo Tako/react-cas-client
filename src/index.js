@@ -163,7 +163,7 @@ class CasClient {
                       if (json.serviceResponse) {
                         if (json.serviceResponse.authenticationSuccess) {
                           let user =
-                            json.serviceResponse.authenticationSuccess;
+                            json.serviceResponse.authenticationSuccess.attributes;
                           let pgtIou = null;
                           if (!util.isEmpty(this.proxy_callback_url)) {
                             pgtIou =
